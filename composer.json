@@ -6,6 +6,17 @@
     "TYPO3",
     "extension"
   ],
+  "authors": [
+    {
+      "name": "Jakob Berlin",
+      "role": "Developer",
+      "homepage": "http://jakob.ybals.de"
+    },
+    {
+      "name": "Daniel Lienert",
+      "role": "Developer"
+    }
+  ],
   "homepage": "http://yag-gallery.de",
   "license": [
     "GPL-2.0+"
