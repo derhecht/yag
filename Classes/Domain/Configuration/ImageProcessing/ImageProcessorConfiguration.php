@@ -31,7 +31,7 @@
  * @author Daniel Lienert <typo3@lienert.cc>
  * @author Michael Knoll <mimi@kaktsuteam.de>
  */
-class Tx_Yag_Domain_Configuration_ImageProcessing_ImageProcessorConfiguration extends Tx_PtExtbase_Configuration_AbstractConfiguration
+class Tx_Yag_Domain_Configuration_ImageProcessing_ImageProcessorConfiguration extends \PunktDe\PtExtbase\Configuration\AbstractConfiguration
 {
     /**
      * Holds path for temporary storing image files

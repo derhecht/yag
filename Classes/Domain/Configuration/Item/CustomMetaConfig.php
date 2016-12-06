@@ -30,7 +30,7 @@
  * @subpackage Configuration\Item
  * @author Daniel Lienert <typo3@lienert.cc>
  */
-class Tx_Yag_Domain_Configuration_Item_CustomMetaConfig extends Tx_PtExtbase_Configuration_AbstractConfiguration
+class Tx_Yag_Domain_Configuration_Item_CustomMetaConfig extends \PunktDe\PtExtbase\Configuration\AbstractConfiguration
 {
     /**
      * Name of this named resolution

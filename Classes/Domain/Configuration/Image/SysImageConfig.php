@@ -30,7 +30,7 @@
  * @subpackage Configuration\Image
  * @author Daniel Lienert <typo3@lienert.cc>
  */
-class Tx_Yag_Domain_Configuration_Image_SysImageConfig extends Tx_PtExtbase_Configuration_AbstractConfiguration
+class Tx_Yag_Domain_Configuration_Image_SysImageConfig extends \PunktDe\PtExtbase\Configuration\AbstractConfiguration
 {
     /**
      * Source Uri of the system image

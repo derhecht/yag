@@ -31,7 +31,7 @@
  * 
  * @author Daniel Lienert <typo3@lienert.cc>
  */
-class Tx_Yag_Domain_Configuration_Image_SysImageConfigCollection extends Tx_PtExtbase_Collection_ObjectCollection
+class Tx_Yag_Domain_Configuration_Image_SysImageConfigCollection extends \PunktDe\PtExtbase\Collection\ObjectCollection
 {
     /**
      * @var string

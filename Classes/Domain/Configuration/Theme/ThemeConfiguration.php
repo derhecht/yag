@@ -32,7 +32,7 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
  * @subpackage Configuration\Theme
  * @author Daniel Lienert <typo3@lienert.cc>
  */
-class Tx_Yag_Domain_Configuration_Theme_ThemeConfiguration extends Tx_PtExtbase_Configuration_AbstractConfiguration
+class Tx_Yag_Domain_Configuration_Theme_ThemeConfiguration extends \PunktDe\PtExtbase\Configuration\AbstractConfiguration
 {
     /**
      * Resolution config collection
@@ -106,11 +106,11 @@ class Tx_Yag_Domain_Configuration_Theme_ThemeConfiguration extends Tx_PtExtbase_
 
 
     /**
-     * @param Tx_PtExtbase_Configuration_AbstractConfigurationBuilder $configurationBuilder
+     * @param \PunktDe\PtExtbase\Configuration\AbstractConfigurationBuilder $configurationBuilder
      * @param $themeName
      * @param array $settings
      */
-    public function __construct(Tx_PtExtbase_Configuration_AbstractConfigurationBuilder $configurationBuilder, array $settings = array(), $themeName = null)
+    public function __construct(\PunktDe\PtExtbase\Configuration\AbstractConfigurationBuilder $configurationBuilder, array $settings = array(), $themeName = null)
     {
         $settings['name'] = $themeName;
         parent::__construct($configurationBuilder, $settings);

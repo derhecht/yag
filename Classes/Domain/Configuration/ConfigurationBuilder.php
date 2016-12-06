@@ -32,7 +32,7 @@
  * @author Daniel Lienert <typo3@lienert.cc>
  * @author Michael Knoll <mimi@kaktusteam.de>
  */
-class Tx_Yag_Domain_Configuration_ConfigurationBuilder extends Tx_PtExtbase_Configuration_AbstractConfigurationBuilder
+class Tx_Yag_Domain_Configuration_ConfigurationBuilder extends \PunktDe\PtExtbase\Configuration\AbstractConfigurationBuilder
 {
     /**
      * Holds settings to build configuration objects

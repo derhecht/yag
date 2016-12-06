@@ -33,7 +33,7 @@
  * @author Daniel Lienert <typo3@lienert.cc>
  * @author Michael Knoll <mimi@kaktusteam.de>
  */
-class Tx_Yag_Domain_Configuration_Context_ContextConfig extends Tx_PtExtbase_Configuration_AbstractConfiguration
+class Tx_Yag_Domain_Configuration_Context_ContextConfig extends \PunktDe\PtExtbase\Configuration\AbstractConfiguration
 {
     /**
      * Selected Item

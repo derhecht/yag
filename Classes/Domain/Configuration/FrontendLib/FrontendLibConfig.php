@@ -30,7 +30,7 @@
  * @subpackage Configuration\FrontendLib
  * @author Daniel Lienert <typo3@lienert.cc>
  */
-class Tx_Yag_Domain_Configuration_FrontendLib_FrontendLibConfig extends Tx_PtExtbase_Configuration_AbstractConfiguration
+class Tx_Yag_Domain_Configuration_FrontendLib_FrontendLibConfig extends \PunktDe\PtExtbase\Configuration\AbstractConfiguration
 {
     /**
      * Indicates if it is allowed to include this lib

@@ -32,7 +32,7 @@
  * @author Daniel Lienert <typo3@lienert.cc>
  * @author Michael Knoll <mimi@kaktusteam.de>
  */
-class Tx_Yag_Domain_Configuration_Item_ItemConfig extends Tx_PtExtbase_Configuration_AbstractConfiguration
+class Tx_Yag_Domain_Configuration_Item_ItemConfig extends \PunktDe\PtExtbase\Configuration\AbstractConfiguration
 {
     /**
      * Holds partial name used for rendering item meta information
