@@ -153,10 +153,9 @@ class user_Tx_Yag_Utility_Flexform_RecordSelector extends Tx_Yag_Utility_Flexfor
      */
     public function initBackendRequirements()
     {
-        $doc = $this->getDocInstance();
         $baseUrl = '../' . ExtensionManagementUtility::siteRelPath('yag');
 
-        $pageRenderer = $doc->getPageRenderer();
+        $pageRenderer = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Page\PageRenderer::class);
 
         $compress = true;
 
@@ -169,20 +168,6 @@ class user_Tx_Yag_Utility_Flexform_RecordSelector extends Tx_Yag_Utility_Flexfor
 
         // Backend
         $pageRenderer->addCssFile($baseUrl . 'Resources/Public/CSS/Backend.css', 'stylesheet', 'all', '', $compress);
-    }
-
-
-    /**
-     * Gets instance of template if exists or create a new one.
-     * Saves instance in viewHelperVariable\TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance template $doc
-     *
-     * return \TYPO3\CMS\Backend\Template\DocumentTemplate
-     */
-    public function getDocInstance()
-    {
-        $doc = GeneralUtility::makeInstance('TYPO3\\CMS\\Backend\\Template\\DocumentTemplate');
-        $doc->backPath = $GLOBALS['BACK_PATH'];
-        return $doc;
     }
 
 

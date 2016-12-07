@@ -195,7 +195,7 @@ class Tx_Yag_Domain_ImageProcessing_Typo3Processor extends Tx_Yag_Domain_ImagePr
         chdir(PATH_site);
 
         $currentPid = (int) current($this->pidDetector->getPids());
-        GeneralUtility::makeInstance(Tx_PtExtbase_Utility_FakeFrontendFactory::class)->createFakeFrontEnd($currentPid);
+        GeneralUtility::makeInstance(\PunktDe\PtExtbase\Utility\FakeFrontendFactory::class)->createFakeFrontEnd($currentPid);
 
         $typoScriptSetup = $this->configurationManager->getConfiguration(\TYPO3\CMS\Extbase\Configuration\ConfigurationManagerInterface::CONFIGURATION_TYPE_FULL_TYPOSCRIPT);
         $GLOBALS['TSFE']->tmpl->setup = $typoScriptSetup;

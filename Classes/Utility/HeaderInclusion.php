@@ -206,7 +206,7 @@ class Tx_Yag_Utility_HeaderInclusion implements \TYPO3\CMS\Core\SingletonInterfa
         $doc = GeneralUtility::makeInstance('TYPO3\\CMS\\Backend\\Template\\DocumentTemplate');
         $doc->backPath = $GLOBALS['BACK_PATH'];
 
-        $this->pageRenderer = $doc->getPageRenderer();
+        $this->pageRenderer = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Page\PageRenderer::class);
         $this->relExtPath = '../' . $this->relExtPath;
     }
 
@@ -218,7 +218,7 @@ class Tx_Yag_Utility_HeaderInclusion implements \TYPO3\CMS\Core\SingletonInterfa
     protected function initializeFrontend()
     {
         $GLOBALS['TSFE']->backPath = TYPO3_mainDir;
-        $this->pageRenderer = $GLOBALS['TSFE']->getPageRenderer();
+        $this->pageRenderer = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Page\PageRenderer::class);
     }
 
 
