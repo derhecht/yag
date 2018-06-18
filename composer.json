@@ -1,6 +1,7 @@
 {
   "name": "dl/yag",
   "type": "typo3-cms-extension",
+  "version": "4.1.4",
   "description": "Scalable, powerful, easy-to-manage Gallery Extension for TYPO3",
   "keywords": [
     "TYPO3",
